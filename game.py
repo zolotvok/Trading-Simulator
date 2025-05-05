@@ -8,7 +8,7 @@ miss=0
 item={
         "cactus":15,
         "bed":20,
-        "nigger":10,
+        "slave":10,
         "mug":5,
         "toy train":5
     }
@@ -32,13 +32,13 @@ elif (choice=="3"):
         print("so you are "+name+" is that correct?(y/n)")
         answer=input()
         if(answer=="y"):
-            print("that name is kinda gay but okay")
+            print(name+" got it.")
             namecreated=1
         if(answer=="n"):
             print("BRUH")
 else:
-    print("then your name shall be stupid bitch who doesn't know how to answer")
-    name="stupid bitch who doesn't know how to answer"
+    print("then your name shall be the guy who doens't know how to answer")
+    name="the guy who doesn't know how to answer"
 #--------------------------------------------------------------------
 def story():
     global youritemcount
@@ -173,7 +173,7 @@ def mission():
         else:
             print("Ok")
     if(miss==1):
-        if(youritems.__contains__("nigger")):
+        if(youritems.__contains__("slave")):
             print("That's a nice one with him around I don't have to clean my house anymore")
             miss+=1
             print("For your next mission you'll have to have 100iip")
@@ -182,7 +182,7 @@ def mission():
             print("to sleep type in sleep")
 
         else:
-            print("Where is my nigger??")
+            print("Where is my slave??")
     if(miss==0):
         if(youritems.__contains__("cactus")):
             print("sell the fucking cactus on the market")
@@ -192,6 +192,6 @@ def mission():
             print("Here is 10 iip for your services")
             money+=10
             input()
-            print("Your next mission will be to buy a nigger and deliver it to me")
+            print("Your next mission will be to buy a slave and deliver it to me")
             miss+=1
 story()
